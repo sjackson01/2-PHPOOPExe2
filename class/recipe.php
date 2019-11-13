@@ -21,12 +21,27 @@ class Recipe
         "quart",
         "gallon",
     );
+    //Magic method __constuct is called at the time and object is constucted
+    public function __construct($title = null)
+    {   
+        $this->setTitle($title);
+    }
+
+    //When echoing the recipe object default to string getTitle()
+    public function __toString()
+    {
+        return $this->getTitle();
+    }
 
     //Set title format
     public function setTitle($title)
-    {
-    //Object property / argument 
-       $this->title = ucwords($title); 
+    {   
+        //Uppercase value wont create false null
+         if(empty($title)){
+            $this->$title = null;
+            }else{
+            $this->title = ucwords($title); 
+        }
     }
     //Get title 
     public function getTitle()
