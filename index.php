@@ -1,5 +1,5 @@
 <?php
-include("classes/recipes.php");
+include("class/recipes.php");
 
 //Instantiate object
 $recipe1 = new Recipe();

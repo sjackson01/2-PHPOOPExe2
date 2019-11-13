@@ -107,11 +107,7 @@ class Recipe
         return $this->source;
     }
 
-    //Create function that will display recipe title and source
-    public function displayRecipe()
-    {   //$this->title is one variable 
-       return $this->title . " by " . $this->source;
-    }
+    
 
 }
 
