@@ -1,10 +1,10 @@
 <?php
-include("class/recipes.php");
+include("class/recipe.php");
 include("class/render.php");
 
 //Instantiate object
 $recipe1 = new Recipe();
-$recipe1->setSource("Grandma Holligan ");
+$recipe1->setSource("Alena Holligan ");
 
 //Call setTitle and pass in lowercase title 
 $recipe1->setTitle("my first recipe ");
