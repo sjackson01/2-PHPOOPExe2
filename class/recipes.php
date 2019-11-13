@@ -11,23 +11,25 @@ class Recipe
     private $source = "Alina Holligan";
 
     //Define measurments property
-    private $measurements = array( 
+    private $measurements = array(
         "tsp",
         "tbsp",
         "cup",
         "oz",
+        "lb",
         "fl oz",
         "pint",
         "quart",
-        "gallon",
+        "gallon"
     );
+
     //Magic method __constuct is called at the time and object is constucted
     public function __construct($title = null)
     {   
         $this->setTitle($title);
     }
 
-    //When echoing the recipe object default to string getTitle()
+    //Use__toString magic method to display info 
     public function __toString()
     {
        $output = "You are calling a " .  __CLASS__ . " object with the title \"";
@@ -55,22 +57,19 @@ class Recipe
         return $this->title;      
     }
 
-    //Set addIngredient method to add ingredients to array  
     public function addIngredient($item, $amount = null, $measure = null)
-    {   
-        //if $amount != null !=float !=int exit and display type and user input
-        if($amount != null && !is_float($amount) && !is_int($amount)){
+    {
+        if ($amount != null && !is_float($amount) && !is_int($amount)) {
             exit("The amount must be a float: " . gettype($amount) . " $amount given");
         }
-        //if $measure != null != values in array $measure exit display values
-        if($measure != null && !in_array(strtolower($measure), $this->measurements)){
-            exit("Please enter a valid measurement: " . implode(",", $this->measurements));
+        if ($measure != null && !in_array(strtolower($measure), $this->measurements)) {
+            exit("Please enter a valid measurement: " . implode(", ", $this->measurements));
         }
-        //Add $item, $amount, $measure to array
+       
         $this->ingredients[] = array(
             "item" => ucwords($item),
             "amount" => $amount,
-            "measure" => strtolower($measure),
+            "measure" => strtolower($measure)
         );
     }
     
@@ -81,7 +80,7 @@ class Recipe
     }
 
     //Set string into instructions array 
-    public function addInstructions($string)
+    public function addInstruction($string)
     {
         $this->instructions[] = $string;
     }
@@ -105,7 +104,7 @@ class Recipe
     }
 
     //Set yeild
-    public function setYeild($yeild)
+    public function setYield($yeild)
     {
         $this->yeild = $yeild;
     }
