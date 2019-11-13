@@ -24,4 +24,7 @@ $recipe1->addTag("Main Course");
 
 $recipe1->setYeild("6 servings");
 
+//Call static method
+echo Render::displayRecipe($recipe1);
+
 ?>
