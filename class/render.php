@@ -1,9 +1,10 @@
 <?php
 class Render
-{
-    public function displayRecipe()
-    {   //$this->title is one variable 
-       return $this->title . " by " . $this->source;
+{   
+    //Parameter recipe object 
+    public static function displayRecipe($recipe)
+    {  //Will only being using recipe so no $this
+       return $recipe->title . " by " . $recipe->source;
     }
 
 }

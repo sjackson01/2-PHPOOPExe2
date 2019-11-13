@@ -1,6 +1,6 @@
 <?php
 include("class/recipes.php");
-
+include("class/render.php");
 //Instantiate object
 $recipe1 = new Recipe();
 $recipe1->setSource("Grandma Holligan ");
