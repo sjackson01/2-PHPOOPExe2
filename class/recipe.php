@@ -30,7 +30,13 @@ class Recipe
     //When echoing the recipe object default to string getTitle()
     public function __toString()
     {
-        return $this->getTitle();
+       $output = "You are calling a " .  __CLASS__ . " object with the title \"";
+       $output .= $this->getTitle() ."\"";
+       $output .= "<br /> \n It is stored in " . basename(__FILE__) . " at " . __DIR__ . ".";
+       $output .= "<br /> \n This display is form line" . __LINE__ . " in method " . __METHOD__;
+       $output .= "<br /> \n The following methods are avaiable for objects of this class: <br /> \n";
+       $output .= implode("<br /> \n", get_class_methods(__CLASS__));
+       return $output; 
     }
 
     //Set title format

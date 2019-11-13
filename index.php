@@ -21,8 +21,11 @@ $recipe1->addTag("Main Course");
 
 $recipe1->setYeild("6 servings");
 
+//Echo tostring in recipe with object 
 echo $recipe1;
+//Echo tostring in render without object 
+echo new Render();
 //Call static method
-echo Render::displayRecipe($recipe1);
+//echo Render::displayRecipe($recipe1);
 
 ?>
