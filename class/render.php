@@ -1,6 +1,14 @@
 <?php
 class Render
 {   
+    //Use tostring magic method to display info 
+    public function __toString()
+    {
+       $output .= "<br /> \n The following methods are avaiable for " . __CLASS__ . " objects: <br /> \n";
+       $output .= implode("<br /> \n", get_class_methods(__CLASS__));
+       return $output; 
+    }
+
     //Add static method to list ingredients arg recipe->getIngredients();
     public static function listIngredients($ingredients){
         $output = "";
