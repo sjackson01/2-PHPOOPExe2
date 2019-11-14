@@ -37,7 +37,7 @@ $lemon_chicken->addIngredient("Pasta", 1, "lb");
 $lemon_chicken->addIngredient("Chicken Breast", 2, "lb");
 $lemon_chicken->addIngredient("olive oil", .5, "cup");
 $lemon_chicken->addIngredient("garlic, chopped", 2, "tbsp");
-$lemon_chicken->addIngredient("lemon juice", .25, "Cup");
+$lemon_chicken->addIngredient("lemon juice", .25, "cup");
 $lemon_chicken->addIngredient("sugar", .5, "tsp");
 $lemon_chicken->addIngredient("parsley", 2, "tsp");
 $lemon_chicken->addIngredient("oregano", 2, "tsp");
