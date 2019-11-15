@@ -9,6 +9,13 @@ class Render
        return $output; 
     }
 
+    //Receive titles from titles array
+    public static function listRecipes($titles)
+    {
+        asort($titles);
+        return implode("<br /> \n", $titles);
+    }
+
     //Add static method to list ingredients arg recipe->getIngredients();
     public static function listIngredients($ingredients){
         $output = "";
