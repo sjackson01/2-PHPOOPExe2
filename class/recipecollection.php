@@ -32,9 +32,24 @@ class RecipeCollection
         $this->recipes[] = $recipe; 
     }
 
-    public function  getRecipe()
+    public function getRecipe()
     {
         return $this->recipe;
+    }
+
+
+    //Seperates and returns title
+    //Being passed as an argument so it doesnt need a parameter? 
+    public function getRecipeTitles()
+    {   
+        //Initialize titles array 
+        $titles = array();
+        //loop through each recipe in the array
+        foreach($this->recipes as $recipe){
+            //Call get title method and add to $titles array 
+            $titles[] = $recipe->getTitle();
+        }
+        return $titles; 
     }
 
 }
