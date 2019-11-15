@@ -34,9 +34,18 @@ foreach ($cookbook->filterByTag("breakfast") as $recipe);{
     $breakfast->addRecipe($recipe);
 }
 
-echo "SHOPPING LIST <br /> ";
-//Create shopping list for our breakfast collection 
-echo Render::listShopping($breakfast->getCombinedIngredients());
+//Create new recipe collection 
+$week1 = new RecipeCollection("Meal Plan: Week 1");
+$week1->addRecipe($cookbook->filterByID(2));
+$week1->addRecipe($cookbook->filterByID(3));
+$week1->addRecipe($cookbook->filterByID(6));
+$week1->addRecipe($cookbook->filterByID(16));
+
+//List recipes in the $week1 collection 
+echo Render::listRecipes($week1->getRecipeTitles());
+
+//Create shopping list for our week1 collection 
+echo Render::listShopping($week1->getCombinedIngredients());
 
 //Call static melemon_chicken = new Recipe("Italian Lemon Chicken");
 //echo Render::displayRecipe($lemon_chicken);
