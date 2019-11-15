@@ -24,7 +24,7 @@ $cookbook->addRecipe($granola);
 $cookbook->addRecipe($spicy_omelette);
 $cookbook->addRecipe($scones);
 
-var_dump($cookbook);
+echo Render::listRecipes($cookbook->getRecipeTitles());
 
 //Call static melemon_chicken = new Recipe("Italian Lemon Chicken");
 echo Render::displayRecipe($lemon_chicken);
