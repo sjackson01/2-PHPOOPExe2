@@ -93,6 +93,14 @@ class RecipeCollection
 
     }
 
+
+    public function filterByID($id)
+    {
+
+        return $this->recipes[$id];
+
+    }
+
 }
 
 
