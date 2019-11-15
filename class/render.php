@@ -22,7 +22,14 @@ class Render
     public static function listRecipes($titles)
     {
         asort($titles);
-        return implode("<br /> \n", $titles);
+        $output = "";
+        foreach($titles as $key => $title){
+            if($output != ""){
+                $output .= "<br /> \n";
+            }
+            $output .= "[$key] $title";
+        }
+        return $output;
     }
 
     //Add static method to list ingredients arg recipe->getIngredients();
