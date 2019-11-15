@@ -24,18 +24,20 @@ $cookbook->addRecipe($granola);
 $cookbook->addRecipe($spicy_omelette);
 $cookbook->addRecipe($scones);
 
+
 //Create new RecipeCollection
 $breakfast = new RecipeCollection("Favorite Breakfast");
 //Loop through breakfast recipes after we filter by tag
 //Pass it breakfast and return each as recipe
 foreach ($cookbook->filterByTag("breakfast") as $recipe);{
-//Add recipe to breakfast collection
+    //The addRecipe function will now add breakfast to recipe array
     $breakfast->addRecipe($recipe);
 }
 
-//Render breakfast recipes
-echo Render::listRecipes($breakfast->getRecipeTitles());
+echo "SHOPPING LIST <br /> ";
+//Create shopping list for our breakfast collection 
+echo Render::listShopping($breakfast->getCombinedIngredients());
 
 //Call static melemon_chicken = new Recipe("Italian Lemon Chicken");
-echo Render::displayRecipe($lemon_chicken);
+//echo Render::displayRecipe($lemon_chicken);
 ?>

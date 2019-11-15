@@ -44,13 +44,37 @@ class RecipeCollection
     {   
         //Initialize titles array 
         $titles = array();
-        //loop through each recipe in the array
+        //Cookbook recipes array? 
         foreach($this->recipes as $recipe){
             //Call get title method and add to $titles array 
             $titles[] = $recipe->getTitle();
         }
         return $titles; 
     }
+    //Updated code the code in the tutorial video is broken
+    public function getCombinedIngredients()
+    {
+        $ingredients = array();
+        foreach($this->recipes as $recipe){
+            foreach($recipe->getIngredients() as $ing){
+                $item = $ing["item"];
+                if(strpos($item, ",")){
+                    $item = strstr($item, ",", true);
+                }
+                if(in_array($item."s", $ingredients)){
+                    $item.="s";
+                } else if(in_array(substr($item, 0, -1), $ingredients)){
+                    $item = substr($item, 0, -1);
+                }
+                $ingredients[$item] = array(
+                    $ing["amount"],
+                    $ing["measure"]
+                );
+            }
+        }
+        return $ingredients;
+    }
+    
 
     //Pass in the tag for our search
     public function filterByTag($tag)
