@@ -52,6 +52,23 @@ class RecipeCollection
         return $titles; 
     }
 
+    //Pass in the tag for our search
+    public function filterByTag($tag)
+    {
+        //Initialize a new tagged recipes array 
+        $taggedRecipes = array();
+        //Loop through our recipes array and seperate out tags
+        foreach ($this->recipes as $recipe){
+            //If in an array the tag is lowercase  call get tags
+            if(in_array(strtolower($tag), $recipe->getTag())){
+                //If tag is found add it to tagged recipes array 
+               $taggedRecipes[] = $recipe;  
+            }
+        }
+        return $taggedRecipes; 
+
+    }
+
 }
 
 
