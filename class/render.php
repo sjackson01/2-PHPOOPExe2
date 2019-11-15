@@ -9,6 +9,29 @@ class Render
        return $output; 
     }
 
+    //Display shopping list 
+    public static function listShopping($ingredient_list)
+    {
+            //Sort by key
+            ksort($ingredient_list);
+            //Return keys instead of values 
+            return implode("<br /> \n", array_keys($ingredient_list));
+    }
+
+    //Receive titles from titles array
+    public static function listRecipes($titles)
+    {
+        asort($titles);
+        $output = "";
+        foreach($titles as $key => $title){
+            if($output != ""){
+                $output .= "<br /> \n";
+            }
+            $output .= "[$key] $title";
+        }
+        return $output;
+    }
+
     //Add static method to list ingredients arg recipe->getIngredients();
     public static function listIngredients($ingredients){
         $output = "";
