@@ -24,7 +24,17 @@ $cookbook->addRecipe($granola);
 $cookbook->addRecipe($spicy_omelette);
 $cookbook->addRecipe($scones);
 
-echo Render::listRecipes($cookbook->getRecipeTitles());
+//Create new RecipeCollection
+$breakfast = new RecipeCollection("Favorite Breakfast");
+//Loop through breakfast recipes after we filter by tag
+//Pass it breakfast and return each as recipe
+foreach ($cookbook->filterByTag("breakfast") as $recipe);{
+//Add recipe to breakfast collection
+    $breakfast->addRecipe($recipe);
+}
+
+//Render breakfast recipes
+echo Render::listRecipes($breakfast->getRecipeTitles());
 
 //Call static melemon_chicken = new Recipe("Italian Lemon Chicken");
 echo Render::displayRecipe($lemon_chicken);
