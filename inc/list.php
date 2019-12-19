@@ -31,6 +31,7 @@
  *
 */
 
+//Create new Recipe Object 
 $lemon_chicken = new Recipe("Italian Lemon Chicken");
 
 $lemon_chicken->addIngredient("Pasta", 1, "lb");
@@ -44,6 +45,7 @@ $lemon_chicken->addIngredient("oregano", 2, "tsp");
 $lemon_chicken->addIngredient("basil", 1, "tbsp");
 $lemon_chicken->addIngredient("parmesian cheese to taste");
 
+//Instructions 
 $lemon_chicken->addInstruction("Cook pasta according to package directions");
 $lemon_chicken->addInstruction("In a large skillet on medium high heat, saute garlic in olive oil for 3 minutes. Cut chicken into bite sized pieces.");
 $lemon_chicken->addInstruction("Add additional items to sauce pan and cover for 5 minutes or untill chicken is almost completely white.");
@@ -54,7 +56,7 @@ $lemon_chicken->addInstruction("Serve over pasta with parmesian cheese to taste"
 $lemon_chicken->setYield("6 Servings");
 $lemon_chicken->addTag("Main Dish", "Dinner");
 
-
+//Create new Recipe Object 
 $granola_muffins = new Recipe("Granola Muffins");
 
 $granola_muffins->addIngredient("egg", 2);
@@ -71,6 +73,7 @@ $granola_muffins->addIngredient("cinnamon", 2, "tsp");
 $granola_muffins->addIngredient("baking soda", .5, "tsp");
 $granola_muffins->addIngredient("salt", .5, "tsp");
 
+//Instructions
 $granola_muffins->addInstruction("In a large bowl, combine wet items");
 $granola_muffins->addInstruction("In a smaller bowl, dry items");
 $granola_muffins->addInstruction("Combine wet and dry mixtures and fold together gently until just mixed. Spoon into a sprayed muffin pan. Sprinkle each muffin top with granola if desired. Bake at 400 for 15 to 20 minutes. Remove from pan and cool on rack.");
@@ -80,7 +83,7 @@ $granola_muffins->addInstruction("*An hour before you want to make these (or at 
 $granola_muffins->setYield("12 large muffins.");
 $granola_muffins->addTag("breakfast, snack, quick bread");/**/
 
-
+//Create new Recipe Object 
 $belgian_waffles = new Recipe("Belgian Waffles");
 
 $belgian_waffles->addIngredient("Egg", 2);
@@ -91,6 +94,7 @@ $belgian_waffles->addIngredient("vanilla", 2, "tsp");
 $belgian_waffles->addIngredient("flour", 2, "cup");
 $belgian_waffles->addIngredient("baking powder", 1, "tbsp");
 
+//Instructions
 $belgian_waffles->addInstruction("Separate eggs. Whip egg whites until stiff peaks form. Set asside.");
 $belgian_waffles->addInstruction("Melt butter, and combine with sugar. Add egg yokes and mix well.");
 $belgian_waffles->addInstruction("Add milk and vanilla and mix well.");
@@ -103,7 +107,7 @@ $belgian_waffles->setYield("10 waffles");
 $belgian_waffles->setSource("Alena Holligan");
 $belgian_waffles->addTag("breakfast, quick bread");
 
-
+//Create new Recipe Object 
 $pepper_casserole = new Recipe("Ground Turkey Pepper Casserole");
 
 $pepper_casserole->addIngredient("bell peppers", 6);
@@ -115,6 +119,7 @@ $pepper_casserole->addIngredient("salt", 1, "tsp");
 $pepper_casserole->addIngredient("tomato sauce", 15, "oz");
 $pepper_casserole->addIngredient("Cheddar Cheese", 8, "oz");
 
+//Instructions
 $pepper_casserole->addInstruction("Cut peppers into bite sized pieces. In 4-quart pan, add enough water to cover peppers. Heat to boiling; add peppers. Cook about 4 minutes; drain.");
 $pepper_casserole->addInstruction("In 10-inch skillet, cook turkey, garlic and onion over medium heat 8 to 10 minutes, stirring occasionally, until beef is brown; drain.");
 $pepper_casserole->addInstruction("Stir in cooked rice, salt and 1 cup of the tomato sauce; cook until hot.");
@@ -127,7 +132,7 @@ $pepper_casserole->setYield("8 servings");
 $pepper_casserole->setSource("Alena Holligan");
 $pepper_casserole->addTag("dinner");
 
-
+//Create new Recipe Object 
 $lasagna = new Recipe("Lasagna");
 
 $lasagna->addIngredient("Lasagna Noodles", 1, "lb");
@@ -145,6 +150,7 @@ $lasagna->addIngredient("Ricotta Cheese", 8, "oz");
 $lasagna->addIngredient("Mozzarella Cheese", 16, "oz");
 $lasagna->addIngredient("Parmesan cheese, grated", .75, "cup");
 
+//Instructions
 $lasagna->addInstruction("In a large skillet, brown sausage over medium high heat, with onions and garlic.");
 $lasagna->addInstruction("In a large bowl combine tomato sauce, sugar, seasonings, ricotta cheese and sausage mixture. Mix until ricotta cheese is smooth.");
 $lasagna->addInstruction("Preheat oven to 375 degrees F (190 degrees C).");
@@ -157,7 +163,7 @@ $lasagna->setSource("Alena Holligan");
 $lasagna->addTag("dinner,italian");
 
 
-//Ken Alger
+//Create new Recipe Object 
 $dried_mushroom_ragout = new Recipe("Dried Mushroom Ragout");
 
 $dried_mushroom_ragout->addIngredient("Pearl Onion", 11, "oz");
@@ -167,6 +173,7 @@ $dried_mushroom_ragout->addIngredient("Olive Oil", 2, "tsp");
 $dried_mushroom_ragout->addIngredient("Salt & Pepper to taste");
 $dried_mushroom_ragout->addIngredient("Sour Cream", 3.5, "oz");
 
+//Instructions
 $dried_mushroom_ragout->addInstruction("Trim ends off pearl onions.");
 $dried_mushroom_ragout->addInstruction("Cover with boiling water and let stand for one minute.");
 $dried_mushroom_ragout->addInstruction("Drain and slip off skins.");
@@ -190,7 +197,7 @@ $dried_mushroom_ragout->setSource("Alice Kingsleigh");
 $dried_mushroom_ragout->addTag("dinner");
 
 
-
+//Create new Recipe Object 
 $rabbit_catalan = new Recipe("Rabbit Catalan");
 
 $rabbit_catalan->addIngredient("Raisins", 1.5, "oz");
@@ -210,6 +217,7 @@ $rabbit_catalan->addIngredient("Hazlenuts", 10);
 $rabbit_catalan->addIngredient("Saffron threads", .25, "tsp");
 $rabbit_catalan->addIngredient("Xocolata a la pedra", .5, "oz");
 
+//Instructions
 $rabbit_catalan->addInstruction("Cover the raisins with water and soak 20 minutes.");
 $rabbit_catalan->addInstruction("Coat the rabbit in the seasoned flour and brown in olive oil. Set aside.");
 $rabbit_catalan->addInstruction("In the same oil, saute the onion until tender and golden.");
@@ -230,7 +238,7 @@ $rabbit_catalan->setSource("Elmer Fudd");
 $rabbit_catalan->addTag("dinner");
 
 
-
+//Create new Recipe Object 
 $grilled_salmon_with_fennel = new Recipe("Grilled Salmon with Fennel");
 
 $grilled_salmon_with_fennel->addIngredient("Olive Oil", 2, "tsp");
@@ -243,6 +251,7 @@ $grilled_salmon_with_fennel->addIngredient("Fennel leaves, finely chopped", 5, "
 $grilled_salmon_with_fennel->addIngredient("Salmon steaks, 5 ounces each", 5);
 $grilled_salmon_with_fennel->addIngredient("Vegetable Oil Spray");
 
+//Instructions
 $grilled_salmon_with_fennel->addInstruction("Heat grill to medium-hot.");
 $grilled_salmon_with_fennel->addInstruction("For the sauce, briefly heat the olive oil in a large skillet.");
 $grilled_salmon_with_fennel->addInstruction("Add the onions and saute until they soften.");
@@ -261,7 +270,7 @@ $grilled_salmon_with_fennel->setSource("Lord Drinian");
 $grilled_salmon_with_fennel->addTag("dinner");
 
 
-
+//Create new Recipe Object 
 $pistachio_duck = new Recipe("Duck Breast in Pistachio Crust");
 
 $pistachio_duck->addIngredient("Duck Breast", 1);
@@ -275,6 +284,7 @@ $pistachio_duck->addIngredient("Port wine", .5, "oz");
 $pistachio_duck->addIngredient("Dried cranberries", 10);
 $pistachio_duck->addIngredient("Shallots, minced", 1, "tsp");
 
+//Instructions
 $pistachio_duck->addInstruction("Press pistachios into duck breast.");
 $pistachio_duck->addInstruction("Dry fry the breast to give it color, finish in a 350 F oven.");
 $pistachio_duck->addInstruction("With cooked rices, combine together along with five of the cranberries that have been allowed to soak in the duck stock long enough to reconstitute.");
@@ -294,7 +304,7 @@ $pistachio_duck->setSource("S.J. Sharkie");
 $pistachio_duck->addTag("dinner");
 
 
-
+//Create new Recipe Object 
 $chili_pork = new Recipe("Pan seared pork tenderloin rolled in a chili peppercrust");
 
 $chili_pork->addIngredient("Pork tenderloin", 6);
@@ -308,6 +318,7 @@ $chili_pork->addIngredient("Lime Juice", 3, "tbsp");
 $chili_pork->addIngredient("Red onion, diced", 3, "tbsp");
 $chili_pork->addIngredient("Olive oil", 2, "tbsp");
 
+//Instructions
 $chili_pork->addInstruction("Roll the tenderloins in the ground chili's.");
 $chili_pork->addInstruction("Heat a saute pan, add a little olive oil and quickly brown tenderloins.");
 $chili_pork->addInstruction("Remove from saute pan an dplace in a 350 F oven for about six minutes.");
@@ -325,7 +336,7 @@ $chili_pork->setSource("B.B. Wolf");
 $chili_pork->addTag("dinner");
 
 
-
+//Create new Recipe Object 
 $crab_cakes = new Recipe("Crab Cakes");
 
 $crab_cakes->addIngredient("Bell peppers, finely diced", 2, "cup");
@@ -342,6 +353,7 @@ $crab_cakes->addIngredient("Dijon Mustard", .25, "cup");
 $crab_cakes->addIngredient("Salt and Pepper to taste");
 $crab_cakes->addIngredient("Crab meat", 2.5, "lb");
 
+//Instructions
 $crab_cakes->addInstruction("Heat large saute pan, add the vegetable oil.");
 $crab_cakes->addInstruction("Add vegetables and cook over medium heat until soft.");
 $crab_cakes->addInstruction("Add flour and stir until smooth.");
@@ -362,7 +374,7 @@ $crab_cakes->setSource("S. Bob");
 $crab_cakes->addTag("dinner");
 
 
-
+//Create new Recipe Object 
 $beef_medallions = new Recipe("Beef Medallions with Ruby Port Sauce");
 
 $beef_medallions->addIngredient("Beef medallions, 2 ounces", 8);
@@ -376,6 +388,7 @@ $beef_medallions->addIngredient("Demi-glace or meat glaze", 5, "oz");
 $beef_medallions->addIngredient("Garlic, chopped", 1, "tsp");
 $beef_medallions->addIngredient("Butter", 1, "tsp");
 
+//Instructions
 $beef_medallions->addInstruction("Pan sear the medallions to carmelize the exterior, finish in oven at 350 F to an internal temperature of 145 F.");
 $beef_medallions->addInstruction("Reduce the shallots, port, red wine, thyme, peppercorns, and bay leaf by half.");
 $beef_medallions->addInstruction("Add demi-glace and reduce.");
@@ -387,6 +400,7 @@ $beef_medallions->setYield("4 servings");
 $beef_medallions->setSource("P. Buffay");
 $beef_medallions->addTag("dinner");
 
+//Create new Recipe Object 
 $silver_dollar_cakes = new Recipe("Silver Dollar Pancakes");
 
 $silver_dollar_cakes->addIngredient("Eggs", 4);
@@ -396,6 +410,7 @@ $silver_dollar_cakes->addIngredient("Cake flour", .25, "cup");
 $silver_dollar_cakes->addIngredient("Sour cream", 2, "cup");
 $silver_dollar_cakes->addIngredient("Sugar", 3, "tbsp");
 
+//Instructions
 $silver_dollar_cakes->addInstruction("Put eggs in bowl and blend thouroughly.");
 $silver_dollar_cakes->addInstruction("Add the salt, baking soda, flour, sour cream, and sugar. Mix well.");
 $silver_dollar_cakes->addInstruction("These cakes are very delicate and require a soft touch when turning.");
@@ -409,7 +424,7 @@ $silver_dollar_cakes->setSource("General Bidwell");
 $silver_dollar_cakes->addTag("breakfast");
 
 
-
+//Create new Recipe Object 
 $french_toast = new Recipe("French Toast");
 
 $french_toast->addIngredient("Whole eggs", 1, "quart");
@@ -421,6 +436,7 @@ $french_toast->addIngredient("Cornflakes, coarsely crushed", 6, "cup");
 $french_toast->addIngredient("Bread, sliced 1 inch thick", 24);
 $french_toast->addIngredient("Butter", .25, "cup");
 
+//Instructions
 $french_toast->addInstruction("Whisk together eggs, milk, cinnamon, nutmeg and lemon zest.");
 $french_toast->addInstruction("Put cornflakes into a separate shallow dish.");
 $french_toast->addInstruction("Dip bread in egg mixture, soak on each side for ten seconds and then coat with cornflakes.");
@@ -434,7 +450,7 @@ $french_toast->setSource("Rene Francois Artois");
 $french_toast->addTag("breakfast");
 
 
-
+//Create new Recipe Object 
 $corn_beef_hash = new Recipe("Corn Beef Hash");
 
 $corn_beef_hash->addIngredient("Cornbeef, small diced", 2, "lb");
@@ -442,6 +458,7 @@ $corn_beef_hash->addIngredient("Onion, small diced", 1);
 $corn_beef_hash->addIngredient("Bell peppers, small diced", 4);
 $corn_beef_hash->addIngredient("Potatoes, cooked, small diced", 6);
 
+//Instructions
 $corn_beef_hash->addInstruction("Saute the onion and bell pepper.");
 $corn_beef_hash->addInstruction("Add corn beef, mix and saute for 2 minutes.");
 $corn_beef_hash->addInstruction("Add potatoes, mix and saute for 2 minutes.");
@@ -454,7 +471,7 @@ $corn_beef_hash->setSource("Zygmund Zyzzyx");\
 $corn_beef_hash->addTag("breakfast");
 
 
-
+//Create new Recipe Object 
 $granola = new Recipe("Granola");
 
 $granola->addIngredient("Rolled oats", 1, "quart");
@@ -469,6 +486,7 @@ $granola->addIngredient("Vegetable oil", .75, "cup");
 $granola->addIngredient("Almonds", 1.5, "cup");
 $granola->addIngredient("Golden raisins", 1, "cup");
 
+//Instructions
 $granola->addInstruction("Mix grains and spices together.");
 $granola->addInstruction("Combine honey and oil together until completely combined.");
 $granola->addInstruction("Blend the grain mixture in with the honey mixture.");
@@ -482,7 +500,7 @@ $granola->setSource("H. Crowell");
 $granola->addTag("breakfast");
 
 
-
+//Create new Recipe Object 
 $spicy_omelette = new Recipe("Spicy Omelette");
 
 $spicy_omelette->addIngredient("Butter", 2, "tbsp");
@@ -493,6 +511,7 @@ $spicy_omelette->addIngredient("Tomato concasse", 2, "tbsp");
 $spicy_omelette->addIngredient("Eggs, beaten", 3);
 $spicy_omelette->addIngredient("Pepper-Jack cheese, shredded", 3, "tbsp");
 
+//Instructions
 $spicy_omelette->addInstruction("Preheat a nonstick omelette pan and melt 1 Tbsp. butter in the pan.");
 $spicy_omelette->addInstruction("Add the chili pepper, sausage, and onion.");
 $spicy_omelette->addInstruction("Saute until the vegetables start to soften and the sausage is lightly browned.");
@@ -514,7 +533,7 @@ $spicy_omelette->setSource("S. Gonzales");
 $spicy_omelette->addTag("breakfast");
 
 
-
+//Create new Recipe Object 
 $scones = new Recipe("Orange Cranberry Scones");
 
 $scones->addIngredient("All purpose flour", 3, "cup");
@@ -529,6 +548,7 @@ $scones->addIngredient("Heavy cream, cold", 1, "cup");
 $scones->addIngredient("Confectioner's sugar", .5, "cup");
 $scones->addIngredient("Orange juice, freshly squeezed", 4, "tsp");
 
+//Instructions
 $scones->addInstruction("Preheat oven to 400 F.");
 $scones->addInstruction("Line a baking sheet with parchment paper.");
 $scones->addInstruction("Sift together dry ingredients into a large bowl.");
