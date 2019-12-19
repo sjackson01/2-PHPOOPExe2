@@ -50,6 +50,7 @@ $lemon_chicken->addInstruction("Add additional items to sauce pan and cover for 
 $lemon_chicken->addInstruction("Remove lid and cook until reduced to a thick sauce.");
 $lemon_chicken->addInstruction("Serve over pasta with parmesian cheese to taste");
 
+//Misc info
 $lemon_chicken->setYield("6 Servings");
 $lemon_chicken->addTag("Main Dish", "Dinner");
 
@@ -75,6 +76,7 @@ $granola_muffins->addInstruction("In a smaller bowl, dry items");
 $granola_muffins->addInstruction("Combine wet and dry mixtures and fold together gently until just mixed. Spoon into a sprayed muffin pan. Sprinkle each muffin top with granola if desired. Bake at 400 for 15 to 20 minutes. Remove from pan and cool on rack.");
 $granola_muffins->addInstruction("*An hour before you want to make these (or at least a half hour) mix your milk of choice with the white vinegar and allow it to \"sour\" at room temperature.");
 
+//Misc info
 $granola_muffins->setYield("12 large muffins.");
 $granola_muffins->addTag("breakfast, snack, quick bread");/**/
 
@@ -96,6 +98,7 @@ $belgian_waffles->addInstruction("Add flour and sugar until just combined. ");
 $belgian_waffles->addInstruction("Fold in egg whites.");
 $belgian_waffles->addInstruction("Follow instructions on waffle maker or add .5 cup of batter to waffle iron and cook for 4 minutes.");
 
+//Misc info
 $belgian_waffles->setYield("10 waffles");
 $belgian_waffles->setSource("Alena Holligan");
 $belgian_waffles->addTag("breakfast, quick bread");
@@ -119,6 +122,7 @@ $pepper_casserole->addInstruction("Pre-heat oven to 350°F.");
 $pepper_casserole->addInstruction("Add turky and rice mixture to a 9x13in baking dish. Spread peppers over the rix mixture and poor the remaining tomato sauce over peppers.");
 $pepper_casserole->addInstruction("Cover tightly with foil. Bake 10 minutes. Uncover and Sprinkle with cheese. Bake about 10 minutes longer or until peppers are tender and cheese is melted.");
 
+//Misc info
 $pepper_casserole->setYield("8 servings");
 $pepper_casserole->setSource("Alena Holligan");
 $pepper_casserole->addTag("dinner");
@@ -147,6 +151,7 @@ $lasagna->addInstruction("Preheat oven to 375 degrees F (190 degrees C).");
 $lasagna->addInstruction("To assemble, spread 1 1/2 cups of sauce mixture in the bottom of a 9x13 inch baking dish. Arrange UNCOOKED noodles over sauce. Spread with a third of the remaining sauce mixture. Top with a third of the gratted mozzarella cheese. Sprinkle with 1/4 cup Parmesan cheese. Repeat layers of noodles, sauce mixture and cheese 2 more times. Cover with foil: to prevent sticking, either spray foil with cooking spray, or make sure the foil does not touch the cheese.");
 $lasagna->addInstruction("Bake in preheated oven for 60 minutes. Remove foil, and bake an additional 15 minutes. Cool for 15 minutes before serving.");
 
+//Misc info
 $lasagna->setYield("12 servings");
 $lasagna->setSource("Alena Holligan");
 $lasagna->addTag("dinner,italian");
@@ -219,10 +224,9 @@ $rabbit_catalan->addInstruction("Spoon this mixture over the rabbit, add the rai
 $rabbit_catalan->addInstruction("Cover again and continue simmering until the rabbit is done.");
 $rabbit_catalan->addInstruction("Taste and adjust seasoning.");
 
+//Misc info
 $rabbit_catalan->setYield("4, 7 ounce servings.");
-
 $rabbit_catalan->setSource("Elmer Fudd");
-
 $rabbit_catalan->addTag("dinner");
 
 
@@ -251,10 +255,9 @@ $grilled_salmon_with_fennel->addInstruction("Place on grill.");
 $grilled_salmon_with_fennel->addInstruction("Grill for approximately five minutes, then turn and grill for five minutes on the second side or until the fish just starts to flake.");
 $grilled_salmon_with_fennel->addInstruction("Serve fish over sauce.");
 
+//Misc info
 $grilled_salmon_with_fennel->setYield("4, 6 ounce servings");
-
 $grilled_salmon_with_fennel->setSource("Lord Drinian");
-
 $grilled_salmon_with_fennel->addTag("dinner");
 
 
@@ -285,10 +288,9 @@ $pistachio_duck->addInstruction("Add remaining duck stock, port wine, and the ot
 $pistachio_duck->addInstruction("Serve the eggplant sliced and fanned over a bed of the rice.");
 $pistachio_duck->addInstruction("Slice the pistachio crusted duck breast over a pool of cranberry port sauce.");
 
+//Misc info
 $pistachio_duck->setYield("1 serving");
-
 $pistachio_duck->setSource("S.J. Sharkie");
-
 $pistachio_duck->addTag("dinner");
 
 
@@ -317,10 +319,9 @@ $chili_pork->addInstruction("Add the chicken stock and lime juice and simmer for
 $chili_pork->addInstruction("Place mixture into a blender and puree until smooth.");
 $chili_pork->addInstruction("Add cilantro before serving with the sliced pork.");
 
+//Misc info
 $chili_pork->setYield("12 portions");
-
 $chili_pork->setSource("B.B. Wolf");
-
 $chili_pork->addTag("dinner");
 
 
@@ -355,10 +356,9 @@ $crab_cakes->addInstruction("Shape into rounds and place in refrigerator until t
 $crab_cakes->addInstruction("To prepare for service, saute rounds until GBD (Golden Brown & Delicious).");
 $crab_cakes->addInstruction("Serve with a fresh fruit salsa and creme fraiche.");
 
+//Misc info
 $crab_cakes->setYield("30 cakes");
-
 $crab_cakes->setSource("S. Bob");
-
 $crab_cakes->addTag("dinner");
 
 
@@ -382,10 +382,9 @@ $beef_medallions->addInstruction("Add demi-glace and reduce.");
 $beef_medallions->addInstruction("Strain sauce, add roasted garlic and finish with butter.");
 $beef_medallions->addInstruction("Serve two ounces of sauce with each serving of two medallions.");
 
+//Misc info
 $beef_medallions->setYield("4 servings");
-
 $beef_medallions->setSource("P. Buffay");
-
 $beef_medallions->addTag("dinner");
 
 $silver_dollar_cakes = new Recipe("Silver Dollar Pancakes");
@@ -404,10 +403,9 @@ $silver_dollar_cakes->addInstruction("It is recommended to use only the tip of t
 $silver_dollar_cakes->addInstruction("Instead, use a very gentle lift, raise the cake by 1/3 the surface area and fold them over to finish cooking.");
 $silver_dollar_cakes->addInstruction("Serve warm.");
 
+//Misc info
 $silver_dollar_cakes->setYield("55 dollar size cakes");
-
 $silver_dollar_cakes->setSource("General Bidwell");
-
 $silver_dollar_cakes->addTag("breakfast");
 
 
@@ -430,10 +428,9 @@ $french_toast->addInstruction("Heat butter in a non-stick skillet over medium he
 $french_toast->addInstruction("Cook the bread in the pan, turning once, until both sides are GBD (Golden brown & delicious)");
 $french_toast->addInstruction("Serve warm with choice of toppings.");
 
+//Misc info
 $french_toast->setYield("12 servings");
-
 $french_toast->setSource("Rene Francois Artois");
-
 $french_toast->addTag("breakfast");
 
 
@@ -451,10 +448,9 @@ $corn_beef_hash->addInstruction("Add potatoes, mix and saute for 2 minutes.");
 $corn_beef_hash->addInstruction("Salt and pepper to taste.");
 $corn_beef_hash->addInstruction("Serve warm.");
 
+//Misc info
 $corn_beef_hash->setYield("16, 4 ounce servings.");
-
-$corn_beef_hash->setSource("Zygmund Zyzzyx");
-
+$corn_beef_hash->setSource("Zygmund Zyzzyx");\
 $corn_beef_hash->addTag("breakfast");
 
 
@@ -480,10 +476,9 @@ $granola->addInstruction("Spread on a sheet pan and toast in oven at 300 F for a
 $granola->addInstruction("Remove from oven and while cooling add in rasisns.");
 $granola->addInstruction("Store in an air tight container.");
 
+//Misc info
 $granola->setYield("1 sheet pan");
-
 $granola->setSource("H. Crowell");
-
 $granola->addTag("breakfast");
 
 
@@ -513,10 +508,9 @@ $spicy_omelette->addInstruction("Tri-fold the eggs over the mixture and 'roll' t
 $spicy_omelette->addInstruction("Cook an additional 30 seconds to finish cooking the eggs and to melt the cheese");
 $spicy_omelette->addInstruction("Slide the omelette onto a plate, top with extra cheese. Serve hot");
 
+//Misc info
 $spicy_omelette->setYield("1 serving");
-
 $spicy_omelette->setSource("S. Gonzales");
-
 $spicy_omelette->addTag("breakfast");
 
 
@@ -550,8 +544,7 @@ $scones->addInstruction("Remove from oven and let cool on the baking sheet for 1
 $scones->addInstruction("Whisk together the confectioner's sugar and orange juice.");
 $scones->addInstruction("Lightly drizzle over the scones while still warm.");
 
+//Misc info
 $scones->setYield("10 scones");
-
 $scones->setSource("Beryl Patmore");
-
 $scones->addTag("breakfast");
