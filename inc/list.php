@@ -31,7 +31,6 @@
  *
 */
 
-//Create new Recipe Object 
 $lemon_chicken = new Recipe("Italian Lemon Chicken");
 
 $lemon_chicken->addIngredient("Pasta", 1, "lb");
@@ -54,7 +53,7 @@ $lemon_chicken->addInstruction("Serve over pasta with parmesian cheese to taste"
 $lemon_chicken->setYield("6 Servings");
 $lemon_chicken->addTag("Main Dish", "Dinner");
 
-//Create new Recipe Object 
+
 $granola_muffins = new Recipe("Granola Muffins");
 
 $granola_muffins->addIngredient("egg", 2);
@@ -79,7 +78,7 @@ $granola_muffins->addInstruction("*An hour before you want to make these (or at 
 $granola_muffins->setYield("12 large muffins.");
 $granola_muffins->addTag("breakfast, snack, quick bread");/**/
 
-//Create new Recipe Object 
+
 $belgian_waffles = new Recipe("Belgian Waffles");
 
 $belgian_waffles->addIngredient("Egg", 2);
@@ -101,7 +100,7 @@ $belgian_waffles->setYield("10 waffles");
 $belgian_waffles->setSource("Alena Holligan");
 $belgian_waffles->addTag("breakfast, quick bread");
 
-//Create new Recipe Object 
+
 $pepper_casserole = new Recipe("Ground Turkey Pepper Casserole");
 
 $pepper_casserole->addIngredient("bell peppers", 6);
@@ -124,7 +123,7 @@ $pepper_casserole->setYield("8 servings");
 $pepper_casserole->setSource("Alena Holligan");
 $pepper_casserole->addTag("dinner");
 
-//Create new Recipe Object 
+
 $lasagna = new Recipe("Lasagna");
 
 $lasagna->addIngredient("Lasagna Noodles", 1, "lb");
@@ -153,7 +152,7 @@ $lasagna->setSource("Alena Holligan");
 $lasagna->addTag("dinner,italian");
 
 
-//Create new Recipe Object 
+//Ken Alger
 $dried_mushroom_ragout = new Recipe("Dried Mushroom Ragout");
 
 $dried_mushroom_ragout->addIngredient("Pearl Onion", 11, "oz");
@@ -186,7 +185,7 @@ $dried_mushroom_ragout->setSource("Alice Kingsleigh");
 $dried_mushroom_ragout->addTag("dinner");
 
 
-//Create new Recipe Object 
+
 $rabbit_catalan = new Recipe("Rabbit Catalan");
 
 $rabbit_catalan->addIngredient("Raisins", 1.5, "oz");
@@ -227,7 +226,7 @@ $rabbit_catalan->setSource("Elmer Fudd");
 $rabbit_catalan->addTag("dinner");
 
 
-//Create new Recipe Object 
+
 $grilled_salmon_with_fennel = new Recipe("Grilled Salmon with Fennel");
 
 $grilled_salmon_with_fennel->addIngredient("Olive Oil", 2, "tsp");
@@ -259,7 +258,7 @@ $grilled_salmon_with_fennel->setSource("Lord Drinian");
 $grilled_salmon_with_fennel->addTag("dinner");
 
 
-//Create new Recipe Object 
+
 $pistachio_duck = new Recipe("Duck Breast in Pistachio Crust");
 
 $pistachio_duck->addIngredient("Duck Breast", 1);
@@ -293,7 +292,7 @@ $pistachio_duck->setSource("S.J. Sharkie");
 $pistachio_duck->addTag("dinner");
 
 
-//Create new Recipe Object 
+
 $chili_pork = new Recipe("Pan seared pork tenderloin rolled in a chili peppercrust");
 
 $chili_pork->addIngredient("Pork tenderloin", 6);
@@ -325,7 +324,7 @@ $chili_pork->setSource("B.B. Wolf");
 $chili_pork->addTag("dinner");
 
 
-//Create new Recipe Object 
+
 $crab_cakes = new Recipe("Crab Cakes");
 
 $crab_cakes->addIngredient("Bell peppers, finely diced", 2, "cup");
@@ -363,7 +362,7 @@ $crab_cakes->setSource("S. Bob");
 $crab_cakes->addTag("dinner");
 
 
-//Create new Recipe Object 
+
 $beef_medallions = new Recipe("Beef Medallions with Ruby Port Sauce");
 
 $beef_medallions->addIngredient("Beef medallions, 2 ounces", 8);
@@ -389,7 +388,6 @@ $beef_medallions->setSource("P. Buffay");
 
 $beef_medallions->addTag("dinner");
 
-//Create new Recipe Object 
 $silver_dollar_cakes = new Recipe("Silver Dollar Pancakes");
 
 $silver_dollar_cakes->addIngredient("Eggs", 4);
@@ -413,7 +411,7 @@ $silver_dollar_cakes->setSource("General Bidwell");
 $silver_dollar_cakes->addTag("breakfast");
 
 
-//Create new Recipe Object 
+
 $french_toast = new Recipe("French Toast");
 
 $french_toast->addIngredient("Whole eggs", 1, "quart");
@@ -439,7 +437,7 @@ $french_toast->setSource("Rene Francois Artois");
 $french_toast->addTag("breakfast");
 
 
-//Create new Recipe Object 
+
 $corn_beef_hash = new Recipe("Corn Beef Hash");
 
 $corn_beef_hash->addIngredient("Cornbeef, small diced", 2, "lb");
@@ -460,7 +458,7 @@ $corn_beef_hash->setSource("Zygmund Zyzzyx");
 $corn_beef_hash->addTag("breakfast");
 
 
-//Create new Recipe Object 
+
 $granola = new Recipe("Granola");
 
 $granola->addIngredient("Rolled oats", 1, "quart");
@@ -489,7 +487,7 @@ $granola->setSource("H. Crowell");
 $granola->addTag("breakfast");
 
 
-//Create new Recipe Object 
+
 $spicy_omelette = new Recipe("Spicy Omelette");
 
 $spicy_omelette->addIngredient("Butter", 2, "tbsp");
@@ -522,7 +520,7 @@ $spicy_omelette->setSource("S. Gonzales");
 $spicy_omelette->addTag("breakfast");
 
 
-//Create new Recipe Object 
+
 $scones = new Recipe("Orange Cranberry Scones");
 
 $scones->addIngredient("All purpose flour", 3, "cup");
