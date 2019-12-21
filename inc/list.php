@@ -467,7 +467,7 @@ $corn_beef_hash->addInstruction("Serve warm.");
 
 //Misc info
 $corn_beef_hash->setYield("16, 4 ounce servings.");
-$corn_beef_hash->setSource("Zygmund Zyzzyx");\
+$corn_beef_hash->setSource("Zygmund Zyzzyx");
 $corn_beef_hash->addTag("breakfast");
 
 
